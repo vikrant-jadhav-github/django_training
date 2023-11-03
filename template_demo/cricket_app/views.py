@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return render(request, 'cricket_home.html')
+    return render(request, 'cricket/cricket_home.html')
 
 def players(request):
-    return render(request, 'cplayers.html')
+    return render(request, 'cricket/cplayers.html')
