@@ -1,0 +1,8 @@
+.basecontainer{
+    display: flex;
+    gap: 10%;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    padding: 1rem;
+}
