@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="home">
+        <h1>Data : Person</h1>
+        {% if data %}
+            {% for i in data %}
+                <p>{{i.name}} - {{i.age}} - {{i.email}} - {{i.p_id}}</p>
+            {% endfor %}
+        {% else %}
+            <p>No data found</p>
+        {% endif %}
+    </div>
+</body>
+</html>
