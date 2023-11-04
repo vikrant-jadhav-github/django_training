@@ -1,3 +1,8 @@
 {% extends 'core/base.html' %}
+{% load static %}
 {% block title %}About{% endblock title %}
+{% block linkrel %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'core/about.css' %}">
+{% endblock linkrel %}
 {% block content %}About{% endblock content %}
