@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .forms import PersonForm
 from .models import Person
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 # Create your views here.
 
 def home(request):
@@ -11,6 +12,7 @@ def home(request):
         if form.is_valid():
             form.save()
             form = PersonForm()
+            messages.success(request, 'Data inserted successfully')
     else:
         form = PersonForm()
     return render(request, 'enroll/home.html', {'form':form, 'data' : data})
