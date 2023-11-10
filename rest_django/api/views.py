@@ -1,7 +1,9 @@
 from django.shortcuts import render
+from rest_framework.authtoken.models import Token
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from api.models import Person
+from django.contrib.auth.models import User
 
 from api.serializers import PersonSerializer
 # Create your views here.
